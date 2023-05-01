@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+.container {
+    padding: 0px 100px;
+}
+
+table {
+    @apply border-2;
+}
+
+table.basic {
+    @apply w-full bg-white rounded-sm shadow-md;
+}
+
+table.basic thead tr td {
+    @apply bg-blue-200 font-bold;
+}
+
+table.basic tr td {
+    @apply border border-gray-300 p-1;
+    border: none;
+}
+
+table a {
+    @apply bg-red-400 text-lg text-gray-900 py-1 px-2 rounded-md inline-flex gap-2;
+}
+
+.btn-red {
+    @apply bg-red-500 rounded-md px-3 py-2 text-white font-bold;
+}
+
+.btn-cancel {
+    @apply bg-blue-500 rounded-md px-6 py-2 text-white font-bold;
+}
+
+.btn-default {
+    @apply px-4 py-1 rounded-md bg-gray-500 text-white;
+}
